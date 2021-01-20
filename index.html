@@ -14,27 +14,33 @@
     <div class="container-fluid">
         <h1>Manu Helpers</h1>
         <div class="row">
-            <div class="col-lg-6 form-group">
-                <label for="table-name">Table Name</label>
-                <input type="text" id="table-name" class="form-control" value="exemplo">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 form-group">
-                <div id="obj" class="code"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 form-group">
-                <div class="btn-group">
-                    <button type="button" id="generate-sql" class="btn btn-primary">Create Table</button>
-                    <button type="button" id="create-column" class="btn btn-secondary">Create Columns</button>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-12 form-group">
+                        <label for="table-name">Table Name</label>
+                        <input type="text" id="table-name" class="form-control" value="exemplo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 form-group">
+                        <div id="obj" class="code"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 form-group">
+                        <div class="btn-group">
+                            <button type="button" id="generate-sql" class="btn btn-primary">Create Table</button>
+                            <button type="button" id="create-column" class="btn btn-secondary">Create Columns</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <pre id="sql"></pre>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <pre id="sql" class="sql"></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
