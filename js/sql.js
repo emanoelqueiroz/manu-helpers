@@ -5,11 +5,11 @@ class SqlUtils {
     }
 
     toSqlType = str => ({
-        Number: 'int4',
-        Double: 'float8',
-        String: 'varchar',
-        Boolean: 'boolean'
-    }[str])
+        'number': 'int4',
+        'double': 'float8',
+        'string': 'varchar',
+        'boolean': 'boolean',
+    }[str.toLowerCase()])
 
     cleanTableName() {
         return this.tableName.replace(/-/g, '_');
