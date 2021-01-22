@@ -1,0 +1,23 @@
+{
+  "name": "manu-helpers",
+  "version": "1.0.0",
+  "description": "Helpers pra eu que sou burro convertendo JSON para SQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanoelqueiroz/manu-helpers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanoelqueiroz/manu-helpers/issues"
+  },
+  "homepage": "https://github.com/emanoelqueiroz/manu-helpers#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "codeflask": "^1.4.1"
+  }
+}

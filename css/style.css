@@ -1,9 +1,10 @@
 .code {
     height: calc(100vh - 215px);
+    margin: 13px 0;
 }
 
 .code .codeflask {
-    max-width: 95%;
+    position: relative;
     background: #f3f3f3;
 }
 
