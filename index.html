@@ -36,9 +36,20 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <pre id="sql" class="sql"></pre>
+                <ul class="nav nav-pills sql-tab" id="sql-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="sql-up-tab" data-toggle="pill" href="#sql-up" role="tab" aria-controls="sql-up" aria-selected="true">Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sql-down-tab" data-toggle="pill" href="#sql-down" role="tab" aria-controls="sql-down" aria-selected="false">Down</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="sql-tabContent">
+                    <div class="tab-pane show in active col-lg-12" id="sql-up" role="tabpanel" aria-labelledby="sql-up-tab">
+                        <pre id="sqlUp" class="sql"></pre>
+                    </div>
+                    <div class="tab-pane col-lg-12" id="sql-down" role="tabpanel" aria-labelledby="sql-down-tab">
+                        <pre id="sqlDown" class="sql"></pre>
                     </div>
                 </div>
             </div>
@@ -48,6 +59,11 @@
     <script src="./js/codeflask.min.js"></script>
     <script src="./js/sql.js"></script>
     <script src="./js/script.js"></script>
+    <!-- Manu falo q vai por com npm o bootstrap -->
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 
 </html>

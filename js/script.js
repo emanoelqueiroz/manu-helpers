@@ -1,7 +1,8 @@
 (() => {
 
     const $ = document.querySelector.bind(document);
-    const $sql = $('#sql');
+    const $sqlUp = $('#sqlUp');
+    const $sqlDown = $('#sqlDown');
     const $tableName = $('#table-name');
     const $buttonGenerateSql = $('#generate-sql');
     const $buttonCreateColumn = $('#create-column');
@@ -20,14 +21,15 @@
         const json = eval('(' + codeFlask.getCode() + ')');
         const sqlUtils = new SqlUtils($tableName.value);
 
-        $sql.innerHTML = sqlUtils.create(json);
+        $sqlUp.innerHTML = sqlUtils.create(json);
+        $sqlDown.innerHTML = sqlUtils.dropTable();
     });
 
     $buttonCreateColumn.addEventListener('click', () => {
         const json = eval('(' + codeFlask.getCode() + ')');
         const sqlUtils = new SqlUtils($tableName.value);
 
-        $sql.innerHTML = sqlUtils.newColumn(json);
+        $sqlUp.innerHTML = sqlUtils.newColumn(json);
     });
 
 })();
