@@ -36,19 +36,19 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <ul class="nav nav-pills sql-tab" id="sql-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="sql-up-tab" data-toggle="pill" href="#sql-up" role="tab" aria-controls="sql-up" aria-selected="true">Up</a>
+                <ul class="nav nav-tabs" id="sql-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="sql-up-tab" data-bs-toggle="tab" href="#sql-up" role="tab" aria-controls="sql-up" aria-selected="true">Up</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="sql-down-tab" data-toggle="pill" href="#sql-down" role="tab" aria-controls="sql-down" aria-selected="false">Down</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="sql-down-tab" data-bs-toggle="tab" href="#sql-down" role="tab" aria-controls="sql-down" aria-selected="false">Down</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="sql-tabContent">
-                    <div class="tab-pane show in active col-lg-12" id="sql-up" role="tabpanel" aria-labelledby="sql-up-tab">
+                    <div class="tab-pane fade show active" id="sql-up" role="tabpanel" aria-labelledby="sql-up-tab">
                         <pre id="sqlUp" class="sql"></pre>
                     </div>
-                    <div class="tab-pane col-lg-12" id="sql-down" role="tabpanel" aria-labelledby="sql-down-tab">
+                    <div class="tab-pane fade" id="sql-down" role="tabpanel" aria-labelledby="sql-down-tab">
                         <pre id="sqlDown" class="sql"></pre>
                     </div>
                 </div>
