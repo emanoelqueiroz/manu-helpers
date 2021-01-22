@@ -91,9 +91,9 @@ class SqlUtils {
 
         return [...sql, ...foreignArr].join('\n');
     }
-    dropTable(){
-        const sql = `DROP TABLE public.${this.tableName};`;
-        return sql;
+
+    dropTable() {
+        return `DROP TABLE public.${this.tableName};`;
     }
 
 }
