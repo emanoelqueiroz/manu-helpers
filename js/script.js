@@ -30,6 +30,7 @@
         const sqlUtils = new SqlUtils($tableName.value);
 
         $sqlUp.innerHTML = sqlUtils.newColumn(json);
+        $sqlDown.innerHTML = sqlUtils.dropColumn(json);
     });
 
 })();
