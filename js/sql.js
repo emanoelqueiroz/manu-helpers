@@ -95,10 +95,11 @@ class SqlUtils {
     dropTable() {
         return `DROP TABLE public.${this.tableName};`;
     }
+
     dropColumn(obj) {
-        const sql = Object.keys(obj).map(key => {
-            return `ALTER TABLE public.${this.cleanTableName()} DROP COLUMN ${key};`
-        })
+        const sql = Object.keys(obj)
+            .map(key => `ALTER TABLE public.${this.cleanTableName()} DROP COLUMN ${key};`);
+
         return [...sql].join('\n');
     }
 
